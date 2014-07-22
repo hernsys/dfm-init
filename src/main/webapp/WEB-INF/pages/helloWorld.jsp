@@ -111,13 +111,6 @@ table {
   margin: 0 -1px;
 }
 
-/*
- * Copyright (c) 2012-2013 Thibaut Courouble
- * http://www.cssflow.com
- *
- * Licensed under the MIT License:
- * http://www.opensource.org/licenses/mit-license.php
- */
 body {
   font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   color: #404040;
@@ -291,7 +284,7 @@ input[type=submit]:active {
       		<li><a href="javascript:loadPopup('empty.dsl');">Domain-specific language (DSL)</a></li>
       		<li><a href="javascript:loadPopup('empty.gdst');">Guided Decision Table (GDST)</a></li>
       		<li><a href="javascript:loadPopup('empty.xls');">Decision table (XLS)</a></li>
-      		<li><a href="javascript:loadPopup('Descuentos.drl');">Business Process (BPMN2)</a></li>
+      		<li><a href="javascript:loadPopup('hiring.bpmn2');">Business Process (BPMN2)</a></li>
       	</ul>
        
     </div>
@@ -311,7 +304,7 @@ input[type=submit]:active {
   
   <script>
 		function loadPopup(resource){
-			var http_base = 'http://127.0.0.1:8888/org.kie.workbench.KIEWebapp/KIEWebapp.html?gwt.codesvr=127.0.0.1:9997';
+			var http_base = 'http://localhost:8080/kie-wb/org.kie.workbench.KIEWebapp/KIEWebapp.html?';
 			var repo = '#default://master@plugTree-playground/HR/src/main/resources/';
 			open(http_base + repo + resource,'','top=200,left=500,width=1200,height=800') ; 
 		}
