@@ -280,7 +280,7 @@ input[type=submit]:active {
     <div class="login">
       <h1>DMF - links example</h1>
       	<ul>
-      		<li><a href="javascript:loadPopup('Descuentos.drl');">Drools Rule Language (DRL)</a></li>
+      		<li><a href="javascript:loadPopup('empty.drl');">Drools Rule Language (DRL)</a></li>
       		<li><a href="javascript:loadPopup('empty.dsl');">Domain-specific language (DSL)</a></li>
       		<li><a href="javascript:loadPopup('empty.gdst');">Guided Decision Table (GDST)</a></li>
       		<li><a href="javascript:loadPopup('empty.xls');">Decision table (XLS)</a></li>
