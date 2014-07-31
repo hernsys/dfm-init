@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Example - DMF</title>
+  <title>Example - DFM</title>
   <link rel="stylesheet" href="style.css">
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
@@ -278,7 +278,7 @@ input[type=submit]:active {
 <body>
   <section class="container">
     <div class="login">
-      <h1>DMF - links example</h1>
+      <h1>DFM - links example</h1>
       	<ul>
       		<li><a href="javascript:loadPopup('empty.drl');">Drools Rule Language (DRL)</a></li>
       		<li><a href="javascript:loadPopup('empty.dsl');">Domain-specific language (DSL)</a></li>
@@ -290,7 +290,7 @@ input[type=submit]:active {
     </div>
 
     <div class="login-help">
-      <p>DMF example </p>
+      <p>DFM example </p>
     </div>
   </section>
 
@@ -305,7 +305,7 @@ input[type=submit]:active {
   <script>
 		function loadPopup(resource){
 			var http_base = 'http://localhost:8080/kie-wb/org.kie.workbench.KIEWebapp/KIEWebapp.html?';
-			var repo = '#default://master@plugTree-playground/HR/src/main/resources/';
+			var repo = '#default://master@plugtree-playground/DFM/src/main/resources/';
 			open(http_base + repo + resource,'','top=200,left=500,width=1200,height=800') ; 
 		}
   </script>
