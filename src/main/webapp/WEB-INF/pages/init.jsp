@@ -2,15 +2,15 @@
 <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
-<head>
+<!--[if gt IE 8]><!-->
+<html lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Example - DFM</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Example - DMF</title>
+  <link rel="stylesheet" href="Example%20-%20DMF_archivos/style.html">
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-</head>
-<style type='text/css'>
+<style type="text/css">
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -274,11 +274,12 @@ input[type=submit]:active {
 }
 
 
-</style>
+</style></head>
+
 <body>
   <section class="container">
     <div class="login">
-      <h1>DFM - links example</h1>
+      <h1>DMF - links example</h1>
       	<ul>
       		<li><a href="javascript:loadPopup('empty.drl');">Drools Rule Language (DRL)</a></li>
       		<li><a href="javascript:loadPopup('empty.dsl');">Domain-specific language (DSL)</a></li>
@@ -286,11 +287,18 @@ input[type=submit]:active {
       		<li><a href="javascript:loadPopup('empty.xls');">Decision table (XLS)</a></li>
       		<li><a href="javascript:loadPopup('hiring.bpmn2');">Business Process (BPMN2)</a></li>
       	</ul>
+	<ul>
+		<li>Read Only:</li>
+      		<li><input name="rOnly" value="true" type="radio" checked> true </li>
+      		<li><input name="rOnly" value="false" type="radio"> false</li>
+      	</ul>
+	
+	
        
     </div>
 
     <div class="login-help">
-      <p>DFM example </p>
+      <p>DMF example </p>
     </div>
   </section>
 
@@ -304,12 +312,21 @@ input[type=submit]:active {
   
   <script>
 		function loadPopup(resource){
+			var radios = document.getElementsByName('rOnly');
+			var rOndly = false;
+			for (var i = 0, length = radios.length; i < length; i++) {
+			    if (radios[i].checked) {
+				rOndly = radios[i].value;
+				break;
+			    }
+			}
 			var http_base = 'http://localhost:8080/kie-wb/org.kie.workbench.KIEWebapp/KIEWebapp.html?';
-			var repo = '#default://master@plugtree-playground/DFM/src/main/resources/';
-			open(http_base + repo + resource,'','top=200,left=500,width=1200,height=800') ; 
+			var repo = '&repository=default://master@plugtree-playground/DFM/src/main/resources/';
+			var rOnly = '&readOnly='+rOndly;
+			open(http_base + repo + resource + rOnly,'','top=200,left=500,width=1200,height=800') ; 
 		}
   </script>
   
   
-</body>
-</html>
+
+</body></html>
