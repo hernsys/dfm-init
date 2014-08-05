@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Example - DMF</title>
+  <title>Example - DFM</title>
   <link rel="stylesheet" href="Example%20-%20DMF_archivos/style.html">
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <style type="text/css">
@@ -279,13 +279,22 @@ input[type=submit]:active {
 <body>
   <section class="container">
     <div class="login">
-      <h1>DMF - links example</h1>
+      <h1>DFM - links example</h1>
       	<ul>
-      		<li><a href="javascript:loadPopup('empty.drl');">Drools Rule Language (DRL)</a></li>
-      		<li><a href="javascript:loadPopup('empty.dsl');">Domain-specific language (DSL)</a></li>
-      		<li><a href="javascript:loadPopup('empty.gdst');">Guided Decision Table (GDST)</a></li>
-      		<li><a href="javascript:loadPopup('empty.xls');">Decision table (XLS)</a></li>
-      		<li><a href="javascript:loadPopup('hiring.bpmn2');">Business Process (BPMN2)</a></li>
+      	
+		<li><a href="javascript:loadPopup('ApplicationRiskScoreTable.gdst');">ApplicationRiskScoreTable (GDST)</a></li>
+		<li><a href="javascript:loadPopup('BureauCallTypeTable.gdst');">BureauCallTypeTable (GDST)</a></li>
+		<li><a href="javascript:loadPopup('CreditContingencyFactorTable.gdst');">CreditContingencyFactorTable (GDST)</a></li>
+		<li><a href="javascript:loadPopup('EligibilityRulesTable.gdst');">EligibilityRulesTable (GDST)</a></li>
+		<li><a href="javascript:loadPopup('PostBureauAffordabilityDecision.rdrl');">PostBureauAffordabilityDecision (RDRL)</a></li>
+		<li><a href="javascript:loadPopup('PostBureauRiskCategoryTable.gdst');">PostBureauRiskCategoryTable (GDST)</a></li>
+		<li><a href="javascript:loadPopup('PreBureauRiskCategoryTable.gdst');">PreBureauRiskCategoryTable (GDST)</a></li>
+		<li><a href="javascript:loadPopup('RoutingRulesTable.gdst');">RoutingRulesTable (GDST)</a></li>
+		<li><a href="javascript:loadPopup('createApplicationRiskScore.drl');">createApplicationRiskScore (DRL)</a></li>
+		<li><a href="javascript:loadPopup('createApplicationRiskScoreGuided.rdrl');">createApplicationRiskScoreGuided.rdrl (RDRL)</a></li>
+		<li>--- Other assets ---</li>
+		<li><a href="javascript:loadPopup('hiring.bpmn2');">Business Process (BPMN2)</a></li>
+
       	</ul>
 	<ul>
 		<li>Read Only:</li>
@@ -298,7 +307,7 @@ input[type=submit]:active {
     </div>
 
     <div class="login-help">
-      <p>DMF example </p>
+      <p>DFM example </p>
     </div>
   </section>
 
