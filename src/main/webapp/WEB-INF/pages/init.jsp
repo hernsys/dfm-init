@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Example - DFM</title>
+  <title>Example - DMF</title>
   <link rel="stylesheet" href="Example%20-%20DMF_archivos/style.html">
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <style type="text/css">
@@ -279,22 +279,26 @@ input[type=submit]:active {
 <body>
   <section class="container">
     <div class="login">
-      <h1>DFM - links example</h1>
+      <h1>DMF - links example</h1>
       	<ul>
-      	
+		<li>--- Url base ---</li>
+		<li><input type="text" placeholder="Url base" id="urlBase" value="http://localhost:8083/kie-wb/" /> </li>
+		<li>--- Guided Decision Tables ---</li>
 		<li><a href="javascript:loadPopup('ApplicationRiskScoreTable.gdst');">ApplicationRiskScoreTable (GDST)</a></li>
 		<li><a href="javascript:loadPopup('BureauCallTypeTable.gdst');">BureauCallTypeTable (GDST)</a></li>
 		<li><a href="javascript:loadPopup('CreditContingencyFactorTable.gdst');">CreditContingencyFactorTable (GDST)</a></li>
 		<li><a href="javascript:loadPopup('EligibilityRulesTable.gdst');">EligibilityRulesTable (GDST)</a></li>
-		<li><a href="javascript:loadPopup('PostBureauAffordabilityDecision.rdrl');">PostBureauAffordabilityDecision (RDRL)</a></li>
 		<li><a href="javascript:loadPopup('PostBureauRiskCategoryTable.gdst');">PostBureauRiskCategoryTable (GDST)</a></li>
 		<li><a href="javascript:loadPopup('PreBureauRiskCategoryTable.gdst');">PreBureauRiskCategoryTable (GDST)</a></li>
 		<li><a href="javascript:loadPopup('RoutingRulesTable.gdst');">RoutingRulesTable (GDST)</a></li>
+		<li>--- Rules ---</li>
+		<li><a href="javascript:loadPopup('PostBureauAffordabilityDecision.rdrl');">PostBureauAffordabilityDecision (RDRL)</a></li>
 		<li><a href="javascript:loadPopup('createApplicationRiskScore.drl');">createApplicationRiskScore (DRL)</a></li>
 		<li><a href="javascript:loadPopup('createApplicationRiskScoreGuided.rdrl');">createApplicationRiskScoreGuided.rdrl (RDRL)</a></li>
-		<li>--- Other assets ---</li>
-		<li><a href="javascript:loadPopup('hiring.bpmn2');">Business Process (BPMN2)</a></li>
-
+		<li>--- Enumerations ---</li>
+		<li><a href="javascript:loadPopup('DecisionManagementEnums.enumeration');">DecisionManagementEnums (enumeration)</a></li>
+		<li></li>
+		
       	</ul>
 	<ul>
 		<li>Read Only:</li>
@@ -307,7 +311,7 @@ input[type=submit]:active {
     </div>
 
     <div class="login-help">
-      <p>DFM example </p>
+      <p>DMF example </p>
     </div>
   </section>
 
@@ -329,10 +333,11 @@ input[type=submit]:active {
 				break;
 			    }
 			}
-			var http_base = 'http://localhost:8080/kie-wb/org.kie.workbench.KIEWebapp/KIEWebapp.html?';
+			var url_base = document.getElementById("urlBase").value;
+			var http = 'org.kie.workbench.KIEWebapp/KIEWebapp.html?';
 			var repo = '&repository=default://master@plugtree-playground/DFM/src/main/resources/';
 			var rOnly = '&readOnly='+rOndly;
-			open(http_base + repo + resource + rOnly,'','top=200,left=500,width=1200,height=800') ; 
+			open(url_base + http + repo + resource + rOnly,'','top=150,left=500,width=900,height=650') ; 
 		}
   </script>
   
