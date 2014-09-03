@@ -400,6 +400,15 @@ input[type=submit]:active {
 						<li><a
 							href="javascript:loadPopup('createApplicationRiskScoreGuided.rdrl');">createApplicationRiskScoreGuided.rdrl
 								(RDRL)</a></li>
+
+						<li><a
+							href="javascript:loadPopup('PreBureauAffordabilityCalculation.rdrl');">PreBureauAffordabilityCalculation.rdrl
+								(RDRL)</a></li>
+
+						<li><a
+							href="javascript:loadPopup('InstallmentCalculation.rdrl');">InstallmentCalculation.rdrl
+								(RDRL)</a></li>
+
 						<li></br></li>
 
 						<li><h1>Enumerations</h1></li>
